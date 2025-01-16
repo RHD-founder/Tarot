@@ -10,7 +10,6 @@ import { Phone, Video, Star, Clock, Book, Sparkles, Menu } from 'lucide-react';
 import Image from 'next/image';
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1507490903500-1f7947d3926?auto=format&fit=crop&w=2000&q=80",
   "https://images.unsplash.com/photo-1515942661900-94b3d1972591?auto=format&fit=crop&w=2000&q=80",
   "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f?auto=format&fit=crop&w=2000&q=80",
 ];
