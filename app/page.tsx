@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Phone, Video, Star, Clock, Book,  Sparkles, Menu } from 'lucide-react';
+import { Phone, Video, Star, Clock, Book, Sparkles, Menu } from 'lucide-react';
 import Image from 'next/image';
 
 const heroImages = [
@@ -19,7 +19,7 @@ const consultations = [
   {
     id: '1',
     title: 'Voice Call Consultation',
-    
+
     price: 1500,
     duration: '15 minutes',
     type: 'Voice Call',
@@ -34,38 +34,38 @@ const consultations = [
     type: 'Voice Call',
     title: 'Voice Call Consultation',
     duration: '45 minutes',
-    price:4500,
+    price: 4500,
   },
   {
     type: 'Voice Call',
     title: 'Voice Call Consultation',
     duration: '60 minutes',
-    price:6000,
+    price: 6000,
   },
   {
     id: '2',
     title: 'Video Call Consultation',
-    
+
     price: 3000,
     duration: '15 minutes',
     type: 'Video Call',
   },
   {
     title: 'Video Call Consultation',
-    
+
     price: 6000,
     duration: '30 minutes',
     type: 'Video Call',
   },
   {
     title: 'Video Call Consultation',
-    
+
     price: 8500,
     duration: '45 minutes',
     type: 'Video Call',
   }, {
     title: 'Video Call Consultation',
-    
+
     price: 12500,
     duration: '60 minutes',
     type: 'Video Call',
@@ -73,7 +73,7 @@ const consultations = [
   {
     id: '3',
     title: '  Monthly Guidance Package',
-   
+
     price: 25000,
     duration: '4-8 weeks',
     type: 'Premium',
@@ -81,7 +81,7 @@ const consultations = [
   {
     id: '4',
     title: 'Yearly Guidance Package',
-    
+
     price: 100000,
     duration: '12 months',
     type: 'Premium',
@@ -98,15 +98,15 @@ const courses = [
     level: 'All Levels',
   },
   {
-    id: '1',
+    id: '2',
     title: 'Twin Flame Guidance',
-    
+   
     price: 50000,
     duration: '6 months',
     level: 'All Levels',
   },
   {
-    id: '1',
+    id: '3',
     title: 'Twin Flame Guidance',
     
     price: 100000,
@@ -114,43 +114,43 @@ const courses = [
     level: 'All Levels',
   },
   {
-    id: '2',
-    title: 'Karmic blockage removal guidance ',
+    id: '4',
+    title: 'Karmic blockage removal guidance',
     
     price: 25000,
     duration: '3 months',
     level: 'All Levels',
   },
   {
-    id: '2',
-    title: 'Karmic blockage removal guidance ',
+    id: '5',
+    title: 'Karmic blockage removal guidance',
     
     price: 50000,
     duration: '6 months',
     level: 'All Levels',
   },
   {
-    id: '2',
-    title: 'Karmic blockage removal guidance ',
-    
+    id: '6',
+    title: 'Karmic blockage removal guidance',
+  
     price: 100000,
     duration: '1 Year',
     level: 'All Levels',
   },
   {
-    id: '3',
+    id: '7',
     title: 'Soul mission guidance',
-    description: '4 comprehensive sessions to guide you through your twin flame journey. Includes personal guidance and healing practices.',
+    
     price: 25000,
     duration: '6 months',
     level: 'All Levels',
   },
 ];
-const courses_ =[
+const courses_ = [
   {
     id: '1',
     title: 'Meditation Session',
-
+    
     price: 1500,
     duration: 'per-session',
     level: 'All Levels',
@@ -286,7 +286,7 @@ export default function Page() {
             <Sparkles className="inline-block ml-2 h-8 w-8" />
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-             with Tarot Expert Deepshikha Gogoi and Transform your life with her  spiritual guidance 
+            with Tarot Expert Deepshikha Gogoi and Transform your life with her  spiritual guidance
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -349,7 +349,7 @@ export default function Page() {
                     </Badge>
                   </div>
                   <CardTitle>{consultation.title}</CardTitle>
-                  <CardDescription>{consultation.description}</CardDescription>
+                 
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="space-y-4">
@@ -387,7 +387,7 @@ export default function Page() {
                     </Badge>
                   </div>
                   <CardTitle>{course.title}</CardTitle>
-                  <CardDescription>{course.description}</CardDescription>
+                  
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="space-y-4">
@@ -400,7 +400,7 @@ export default function Page() {
                       <span>Personal Consultation</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      
+
                       <span>₹{course.price}</span>
                     </div>
                   </div>
@@ -415,7 +415,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="courses" className="py-16 bg-background">
+      <section id="courses_" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-8 text-center">Meditation Guidance - By Meenal Gupta</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -428,7 +428,7 @@ export default function Page() {
                     </Badge>
                   </div>
                   <CardTitle>{course.title}</CardTitle>
-                  <CardDescription>{courses.description}</CardDescription>
+                  
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="space-y-4">
@@ -441,7 +441,7 @@ export default function Page() {
                       <span>Personal Consultation</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      
+
                       <span>₹{course.price}</span>
                     </div>
                   </div>
